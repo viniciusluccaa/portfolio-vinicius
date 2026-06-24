@@ -430,7 +430,7 @@ nav {
 canvas#leadsChart { width: 100% !important; height: 100% !important; }
 
 /* ─── RESPONSIVE ─── */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   nav { padding: 18px 24px; }
   .nav-links { display: none; }
   .hero, .sobre, .proj-split, .proj-details, .closing, .gnovva, .vol, .events { grid-template-columns: 1fr; }
