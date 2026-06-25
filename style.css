@@ -430,7 +430,59 @@ nav {
 canvas#leadsChart { width: 100% !important; height: 100% !important; }
 
 /* ─── RESPONSIVE ─── */
-@media (max-width: 768px) {
+/* ─── NOTEBOOK (1024-1440px) ─── */
+@media (max-width: 1300px) {
+  .hero-name { font-size: clamp(56px, 7vw, 96px); }
+  .ch-title { font-size: clamp(48px, 7vw, 88px); }
+  .sobre-left, .sobre-right,
+  .proj-info, .det, .ev,
+  .gn-left, .vol-info, .cl-right { padding: 60px 48px; }
+  .hero-left { padding: 80px 48px; }
+  .legados { padding: 80px 48px; }
+  .leads-chapter { padding: 80px 48px; }
+  .kpi-val { font-size: 40px; }
+  .stat-n { font-size: 60px; }
+}
+
+/* ─── iPAD (768-1024px) ─── */
+@media (max-width: 1024px) {
+  nav { padding: 20px 32px; }
+  .nav-links { gap: 24px; }
+  .nav-links a { font-size: 10px; }
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero-left { padding: 100px 40px 60px; }
+  .hero-right { height: 50vh; }
+  .sobre { grid-template-columns: 1fr; }
+  .sobre-left { padding: 80px 40px 40px; border-right: none; border-bottom: 1px solid var(--light); }
+  .sobre-right { padding: 40px 40px 80px; }
+  .proj-split, .proj-split.flip { grid-template-columns: 1fr; direction: ltr; }
+  .proj-img { min-height: 340px; }
+  .proj-info { padding: 56px 40px; }
+  .proj-details { grid-template-columns: 1fr; }
+  .det { border-right: none; border-bottom: 1px solid var(--light); padding: 48px 40px; }
+  .events { grid-template-columns: 1fr; }
+  .ev { border-right: none; padding: 56px 40px; }
+  .stats { grid-template-columns: repeat(3,1fr); }
+  .gnovva { grid-template-columns: 1fr; }
+  .gn-left { padding: 60px 40px; border-right: none; border-bottom: 1px solid rgba(0,212,245,0.12); }
+  .gn-right { min-height: 300px; }
+  .vol { grid-template-columns: 1fr; }
+  .vol-img { min-height: 360px; }
+  .vol-info { padding: 56px 40px; border-left: none; border-top: 1px solid var(--light); }
+  .closing { grid-template-columns: 1fr; }
+  .cl-img { min-height: 420px; }
+  .cl-right { padding: 60px 40px; }
+  .leg-grid { grid-template-columns: repeat(3,1fr); }
+  .legados { padding: 80px 40px; }
+  .leads-chapter { padding: 72px 40px; }
+  .kpi-row, .val-row { grid-template-columns: 1fr 1fr; }
+  .ch-body { padding: 60px 40px; }
+  .ch-sub { text-align: left; margin-top: 20px; }
+  .strip-cap { left: 40px; }
+}
+
+/* ─── MOBILE ─── */
+@media (max-width: 900px) {
   nav { padding: 18px 24px; }
   .nav-links { display: none; }
   .hero, .sobre, .proj-split, .proj-details, .closing, .gnovva, .vol, .events { grid-template-columns: 1fr; }
@@ -439,6 +491,7 @@ canvas#leadsChart { width: 100% !important; height: 100% !important; }
   .sobre-left, .sobre-right, .proj-info, .det, .ev, .gn-left, .vol-info, .cl-right { padding: 60px 24px; }
   .legados { padding: 80px 24px; }
   .leg-grid { grid-template-columns: 1fr 1fr; }
+  .ch-ghost { font-size: 80px; }
   .ch-body { grid-template-columns: 1fr; padding: 60px 24px; }
   .ch-sub { text-align: left; margin-top: 20px; }
   .ch-ghost { font-size: 100px; }
